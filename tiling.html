@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-08-29T19:05:57-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Mathematics of Tiling</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://pythontutor.com/build/pytutor-embed.bundle.js?cc25af72af" charset="utf-8"></script>
+</head>
+<body class="mathbook-article">
+<a class="assistive" href="#content">Skip to main content</a><div style="display:none;">\(\require{cancel}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="" target="_blank"><img src="images/cover.jpg" alt="Logo image for document"></a><div class="title-container">
+<h1 class="heading"><a href="tiling.html"><span class="title">The Mathematics of Tiling</span><span class="subtitle">A summary of student-centered research</span></a></h1>
+<p class="byline">Mike Hitchman</p>
+</div>
+</div></div>
+</header><div class="page">
+<main class="main"><div id="content" class="mathbook-content"><section class="article" id="tiling"><p id="p-1">The mathematics of tiling has undergone a transformation from its roots in "recreational mathematics" many years ago to its status today as a lively area of research with fundamental ties to combinatorics, group theory, and topology.  I first encountered the charm of tiling questions in my own capstone undergraduate project, which centered on the groundbreaking paper by John Conway and JC Lagarias, <a knowl="./knowl/biblio-conway.html" knowl-id="xref-biblio-conway" alt="Bibliographic Entry 2 Tiling with polyominoes and combinatorial group theory" title="Bibliographic Entry 2 Tiling with polyominoes and combinatorial group theory">[2]</a>. Now I have mentored eight students on four student-inspired research projects in the mathematics of tiling. These research experiences, which have been funded partially by Linfield College Student-Faculty Collaborative Research Grants and partially by the National Science Foundation, have resulted in at least six regional and national presentations by students, and have directly led to four publications.</p>
+<p id="p-2">What follows is a brief overview of the student-faculty collaborative research projects I have mentored, and publications that have resulted from them.  A short list of additional references has also been provided.</p>
+<ol id="ol-1" style="list-style-type: decimal;">
+<li id="li-1">
+<p id="p-3"><!--Style me with CSS--><em>Tiling modifed rectangles with ribbon tiles</em> (2008) with Ben Coate at The College of Idaho. We worked on questions involving ribbon tile tetrominoes and rectangles whose lower-right squares have been removed.  Ben presented our work at the Regional Meeting of the MAA at Carroll College, in June, 2009.  Our main result can be summarized as follows:</p>
+<p id="p-4">Let \(\Gamma_m(a,b)\) be the “gamma”-shaped region obtained by removing from an \(a \times b\) rectangle an \(m \times m\) square from its lower right corner (for instance, \(\Gamma_3(7,15)\) is pictured below).  For odd \(m \geq 1\) and \(a,b \gt m\) the tile set pictured below tiles the region \(\Gamma_m(a,b)\) if and only if \(a \equiv m\) (mod 4) and \(b \equiv m\) (mod 8); or \(a \equiv 3m\) (mod 4) and \(b \equiv 3m\) (mod 8).</p>
+<figure class="figure-like" id="figure-1"><object type="image/svg+xml" style="width:60%; margin:auto; display:block;" data="images/im-gamma-tiles.svg" alt=""><p style="margin:auto">&lt;&lt;SVG image is unavailable, or your browser cannot render it&gt;&gt;</p></object></figure>
+</li>
+<li id="li-2">
+<!--Style me with CSS--><em>Tiling with skew and T-tetrominoes</em> (2010) with Cynthia Lester at Linfield College.  We investigated which rectangles and modified rectangles (rectangles whose upper-left and lower-right squares have been removed) can be tiled by the set of eight skew and T-tetrmonioes pictured below.  Cynthia presented her work at the Northwest Undergraduate Mathematics Symposium at Reed College in June, 2011, and published her results in <a knowl="./knowl/biblio-lester.html" knowl-id="xref-biblio-lester" alt="Bibliographic Entry 6 Tilings with T and Skew Tetrominoes" title="Bibliographic Entry 6 Tilings with T and Skew Tetrominoes">[6]</a>.</li>
+<li id="li-3">
+<!--Style me with CSS--><em>Tiling annular regions</em> (2013) with Amanda Bright, Greg Clark, Kyle Evitts, Brian Keating, Brian Whetter, and faculty colleague Chuck Dunn at Linfield College.  We investigated which annular regions of the form \(A_n(a,b)\) can be tiled by the set of 8 skew and T-tetrominoes below, where \(A_n(a,b)\) denotes the rectangular annulus of width \(n\) enclosing an \(a \times b\) rectangle.  For instance, \(A_2(3,4)\) is pictured below.  We enumerated tilings for width 2-annuli (e.g., \(A_2(3,4)\) can be tiled in 64 distinct ways!), and determined the tile counting group for width-2 annuli.  Amanda, Greg, and Kyle each gave a talk at the Joint Mathematics Meetings in Baltimore in January, 2014.  We published our results in <!--Style me with CSS--><em>Involve</em>, <a knowl="./knowl/biblio-annuli.html" knowl-id="xref-biblio-annuli" alt="Bibliographic Entry 1 Tiling annular regions with skew and T-tetrominoes" title="Bibliographic Entry 1 Tiling annular regions with skew and T-tetrominoes">[1]</a>. <figure class="figure-like" id="figure-2"><object type="image/svg+xml" style="width:60%; margin:auto; display:block;" data="images/im-annuli.svg" alt=""><p style="margin:auto">&lt;&lt;SVG image is unavailable, or your browser cannot render it&gt;&gt;</p></object></figure>
+</li>
+<li id="li-4">
+<!--Style me with CSS--><em>Competitive tiling</em> (2013) with Levi Altringer and faculty colleague Chuck Dunn at Linfield College.  Competitive tiling consists of two players, a tile set, a region, and a non-negative integer \(d\). Alica and Bob, our two players, alternate placing tiles on the untiled squares of the region. They play until no more tiles can be placed. Alice wins if at most \(d\) squares are untiled at the end of the game, and Bob wins if more than \(d\) squares are untiled. For given regions and tile sets we are interested in the smallest value of \(d\) such that Alice has a winning strategy. We call this the game tiling number. We found the game tiling number for dominoes and three families of regions: \(2 \times n\) rectangles, modified \(2 \times n\) rectangles, and width-2 annular regions.   Levi gave a talk at the Joint Mathematics Meetings in Baltimore in January, 2014. More information can be found <a class="external-url" href="http://digitalcommons.linfield.edu/symposium/2014/all/21/" target="_blank">here</a>.</li>
+</ol>
+<p id="p-5">These student-centered research projects, particularly the one with Ben Coate, led me to study the connection between tile invariants and the homotopy of 2-complexes, see <a knowl="./knowl/biblio-toptile.html" knowl-id="xref-biblio-toptile" alt="Bibliographic Entry 4 The topology of tile invariants" title="Bibliographic Entry 4 The topology of tile invariants">[4]</a>.</p>
+<p id="p-6">An overview of student-centered research on tiling questions will appear soon as a chapter in a book on undergraduate research <a knowl="./knowl/biblio-toolbox.html" knowl-id="xref-biblio-toolbox" alt="Bibliographic Entry 3 A toolbox for tackling tiling questions" title="Bibliographic Entry 3 A toolbox for tackling tiling questions">[3]</a>.  Other good introductory articles into the mathematics of tiling, particularly with research related to tile invariants: [<a knowl="./knowl/biblio-conway.html" knowl-id="xref-biblio-conway" alt="Bibliographic Entry 2 Tiling with polyominoes and combinatorial group theory" title="Bibliographic Entry 2 Tiling with polyominoes and combinatorial group theory">2</a>, <a knowl="./knowl/biblio-korn.html" knowl-id="xref-biblio-korn" alt="Bibliographic Entry 5 Geometric and algebraic properties of polyomino tilings" title="Bibliographic Entry 5 Geometric and algebraic properties of polyomino tilings">5</a>, <a knowl="./knowl/biblio-pak.html" knowl-id="xref-biblio-pak" alt="Bibliographic Entry 7 Ribbon tile invariants" title="Bibliographic Entry 7 Ribbon tile invariants">7</a>, <a knowl="./knowl/biblio-propp.html" knowl-id="xref-biblio-propp" alt="Bibliographic Entry 8 A pedestrian approach to a method of Conway, or, A tale of two cities" title="Bibliographic Entry 8 A pedestrian approach to a method of Conway, or, A tale of two cities">8</a>, <a knowl="./knowl/biblio-thurston.html" knowl-id="xref-biblio-thurston" alt="Bibliographic Entry 9 Conway’s tiling groups" title="Bibliographic Entry 9 Conway’s tiling groups">9</a>].</p>
+
+<article class="paragraphs" id="paragraphs-1"><h5 class="heading"><span class="title">References</span></h5>
+<p id="p-7"><article class="bib" id="biblio-annuli">
+<div class="bibitem">[1]</div>  <div class="bibentry">Bright, Amanda; Clark, Gregory J.; Dunn, Charles; Evitts, Kyle; Hitchman, Michael P.; Keating, Brian; Whetter, Brian, <i>Tiling annular regions with skew and T-tetrominoes</i>. Involve 10 (2017), no. 3, 505–521.   <a class="external-url" href="http://msp.org/involve/2017/10-3/p09.xhtml" target="_blank">http://msp.org/involve/2017/10-3/p09.xhtml</a> </div></article><div class="posterior">
+    <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-note-1" id="note-1"><span class="solution"><span class="type">Abstract</span></span></a></span><span id="hk-note-1" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-8"><!--Style me with CSS-->In this paper, we study tilings of annular regions in the integer lattice by skew and T-tetrominoes. We demonstrate the tileability of most annular regions by the given tile set, enumerate the tilings of width-2 annuli, and determine the tile counting group associated to this tile set and the family of all width-2 annuli.</p></span></span></div> 
+<article class="bib" id="biblio-conway"><div class="bibitem">[2]</div>
+<div class="bibentry">Conway, J.H.; Lagarias, J.C. <i>Tiling with polyominoes and combinatorial group theory</i>. J. Combin. Theory Ser. A, 53 (1990), 183-208.</div></article>
+<article class="bib" id="biblio-toolbox"><div class="bibitem">[3]</div>  
+<div class="bibentry">Hitchman, Michael P. "A toolbox for tackling tiling questions." <i>A Primer for Undergraduate Research: from Groups and Tiles to Frames and Vaccines</i> Eds. Wootton, A.; Peterson, V.; Lee, C.  Springer, to appear. </div></article><div class="posterior">
+    <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-note-2" id="note-2"><span class="solution"><span class="type">Abstract</span></span></a></span><span id="hk-note-2" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-9">This article provides an introduction to techniques developed to address three types of tiling questions in the integer lattice: questions of <!--Style me with CSS--><em>tileability</em> - which regions in a collection  \(\cal R\) can be tiled by a tile set \(T\text{;}\)  <!--Style me with CSS--><em>connectivity</em> - what can be said about how two tilings of a region in \(\cal R\) must be related; and <!--Style me with CSS--><em>enumeration</em> - how many ways can a region in \(\cal R\) be tiled by \(T\text{.}\)   We place an emphasis on tile invariants, linear combinations among the number of copies of each tile that must persist in any tiling of a region.  A tiler's toolbox draws on content from combinatorics, number theory, group theory, and topology.  Given their hands-on nature, their variety, and their relevance to the undergraduate curriculum, tiling questions continue to be a lively subject for undergraduate mathematics research.</p></span></span>
+</div> 
+<article class="bib" id="biblio-toptile"><div class="bibitem">[4]</div>  <div class="bibentry">Hitchman, Michael P. <i>The topology of tile invariants</i>. Rocky Mountain J. Math. 45 (2015), no. 2, 539--564. doi:10.1216/RMJ-2015-45-2-539. <a class="external-url" href="https://projecteuclid.org/euclid.rmjm/1434208486" target="_blank">https://projecteuclid.org/euclid.rmjm/1434208486</a>. </div></article><div class="posterior">
+    <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-note-3" id="note-3"><span class="solution"><span class="type">Abstract</span></span></a></span><span id="hk-note-3" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-10"><!--Style me with CSS-->In this note, we use techniques in the topology of 2-complexes to recast some tools that have arisen in the study of planar tiling questions. With spherical pictures, we show that the tile counting group associated to a set \(T\) of tiles and a set of regions tileable by \(T\) is isomorphic to a quotient of the second homology group of a 2-complex built from \(T\). In this topological setting, we derive some well-known tile invariants, one of which we apply to the solution of a tiling question involving modified rectangles.</p></span></span>
+</div> 
+<article class="bib" id="biblio-korn"><div class="bibitem">[5]</div>  <div class="bibentry">Michael Korn, <i>Geometric and algebraic properties of polyomino tilings</i>, Ph.D. thesis, MIT (2004), <a class="external-url" href="http://hdl.handle.net/1721.1/16628" target="_blank">http://hdl.handle.net/1721.1/16628</a></div></article> 
+<article class="bib" id="biblio-lester"><div class="bibitem">[6]</div>  <div class="bibentry">Lester, C. <i>Tilings with T and Skew Tetrominoes</i>, Quercus: Linfield Journal of Undergraduate Research, Vol. 1 , Article 3, 2012.  <a class="external-url" href="http://digitalcommons.linfield.edu/quercus/vol1/iss1/3" target="_blank">http://digitalcommons.linfield.edu/quercus/vol1/iss1/3</a> </div></article><div class="posterior">
+    <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-note-4" id="note-4"><span class="solution"><span class="type">Abstract</span></span></a></span><span id="hk-note-4" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-11"><!--Style me with CSS--> We consider tiling problems in the integer lattice. Specifically, we look at a set of four T-tetrominoes and four skew tetrominoes and determine when this set can tile rectangles and modified rectangles. Local considerations and coloring arguments are the main methods used to prove the untileability of regions.</p></span></span>
+</div> 
+<article class="bib" id="biblio-pak"><div class="bibitem">[7]</div>  <div class="bibentry">Pak, I. <i>Ribbon tile invariants</i>, Trans. Amer. Math. Soc., 352 (2000), no. 12, 5525-5561.</div></article> 
+<article class="bib" id="biblio-propp"><div class="bibitem">[8]</div>  <div class="bibentry">Propp, J. <i>A pedestrian approach to a method of Conway, or, A tale of two cities</i>, Mathematics Magazine, 70 (1997), no. 5, 327-340.</div></article> 
+<article class="bib" id="biblio-thurston"><div class="bibitem">[9]</div>  <div class="bibentry">Thurston, W.P. <i>Conway’s tiling groups</i>, Amer. Math. Monthly, 95 (1990), special geometry issue, 757-773.</div></article></p></article></section></div></main>
+</div>
+<footer id="footer"><div class="footer-content">
+<div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a>&nbsp;<a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></footer>
+<script type="text/javascript">createAllVisualizersFromHtmlAttrs();</script>
+</body>
+</html>

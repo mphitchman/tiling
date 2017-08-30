@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mathbook>
+<docinfo>
+	<brandlogo source="images/cover.jpg" />
+    <latex-preamble>
+            <package>cancel</package>
+    </latex-preamble>
+	<latex-image-preamble>
+        \usepackage{pgfplots}               % loads tikz package
+        \usepackage{smartdiagram}           % for a circular diagram
+        \pgfplotsset{axis x line = middle,
+                     axis y line = middle}
+        \usetikzlibrary{backgrounds}
+        \usetikzlibrary{arrows,matrix}
+    </latex-image-preamble>
+</docinfo>
+<article xml:id="tiling"><title>The Mathematics of Tiling</title><subtitle>A summary of student-centered research with Mike Hitchman</subtitle>
+
+	
+<p>Professor Hitchman has mentored several undergraduate research projects in the mathematics of tilings.  This interest stems from his own undergraduate project which was centered around a groundbreaking paper in the mathematics of tiling by John Conway and JC Lagarias, <xref ref="biblio-conway" />.  In the last several years Professor Hitchman has worked with eight students on tiling problems in the integer lattice.  This work, some of which has been funded by Linfield College and some of which has been funded by the National Science Foundation, has resulted in numerous regional and national presentations by students, and has directly led to four publications.</p>
+ 
+<p>What follows is a brief overview of previous student-faculty collaborative research projects Professor Hitchman has mentored, and publications that have resulted from them.</p> 
+        
+<ol>
+    <li> <p><em>Tiling modifed rectangles with ribbon tiles</em> (2008) with Ben Coate at The College of Idaho. We worked on questions involving ribbon tile tetrominoes and rectangles whose lower-right squares have been removed.  Ben presented our work at the Regional Meeting of the MAA in Montana in the spring of 2009.  Our main result can be summarized as follows:</p>
+			    	<p>
+			          Let <m>\Gamma_m(a,b)</m> be the <q>gamma</q>-shaped region obtained by removing from an <m>a \times b</m> rectangle an <m>m \times m</m> square from its lower right corner (for instance, <m>\Gamma_3(7,15)</m> is pictured below).  For odd <m>m \geq 1</m> and <m>a,b \gt m</m> the tile set pictured below tiles the region <m>\Gamma_m(a,b)</m> if and only if <m>a \equiv m</m> (mod 4) and <m>b \equiv m</m> (mod 8); or <m>a \equiv 3m</m> (mod 4) and <m>b \equiv 3m</m> (mod 8).
+			      	</p>
+
+		    <figure>
+		    	<image xml:id="im-gamma-tiles" width="60%">
+		      <latex-image-code>
+		        <![CDATA[
+		        \begin{tikzpicture}[scale=.3]
+				\draw[thick] (0,0)--(0,7)--(15,7)--(15,3)--(12,3)--(12,0)--cycle;
+				\draw[thin] (0,0) grid (12,7);
+				\draw[thin] (12,3) grid (15,7);
+				\draw (4.5, -1) node{$\Gamma_3(7,15)$};
+				\begin{scope}[xshift=18cm]
+				\draw[thick] (0,0) -- (0,1) -- (2,1) -- (2,2) -- (3,2)--(3,0)--cycle;
+				\draw[very thin] (1,0)--(1,1) (2,0)--(2,1)--(3,1);
+				%\draw (1.5,-.7) node{001};
+				\begin{scope}[xshift=4cm]
+				\draw[thick] (0,0)--(0,1)--(1,1)--(1,2)--(3,2)--(3,1)--(2,1)--(2,0)--cycle;
+				\draw[very thin] (1,0)--(1,1)--(2,1)--(2,2);
+				%\draw (1.5,-.7) node{010};
+				\end{scope}
+				\begin{scope}[xshift=8cm]
+				\draw[thick] (0,0) -- (0,2)--(3,2)--(3,1)--(1,1)--(1,0)--cycle;
+				\draw[very thin] (0,1)--(1,1)--(1,2) (2,1)--(2,2);
+				%\draw (1.5,-.7) node{100};
+				\end{scope}
+				\begin{scope}[xshift=12cm]
+				\draw[thick] (0,0) rectangle (1,4);
+				\draw[very thin] (0,1)--(1,1) (0,2)--(1,2) (0,3)--(1,3);
+				%\draw (0.5,-.7) node{111};
+				\end{scope}
+				\end{scope}
+				\end{tikzpicture}
+		        ]]>
+		      </latex-image-code>
+		    </image>
+		    </figure>
+	    </li>
+
+	<li><em>Tiling with skew and T-tetrominoes</em> (2010) with Cynthia Lester at Linfield College.  We investigated which rectangles and modified rectangles (rectangles whose upper-left and lower-right squares have been removed) can be tiled by the set of eight skew and T-tetrmonioes pictured below.  Cynthia presented her work at the Northwest Undergraduate Mathematics Symposium at Reed College in June, 2011, and published her results in <xref ref="biblio-lester" />.
+	</li>
+    <li><em>Tiling annular regions</em> (2013) with Amanda Bright, Greg Clark, Kyle Evitts, Brian Keating, Brian Whetter, and faculty colleague Chuck Dunn at Linfield College.  We investigated which annular regions of the form <m>A_n(a,b)</m> can be tiled by the set of 8 skew and T-tetrominoes below, where <m>A_n(a,b)</m> denotes the rectangular annulus of width <m>n</m> enclosing an <m>a \times b</m> rectangle.  For instance, <m>A_2(3,4)</m> is pictured below.  We enumerated tilings for width 2-annuli (e.g., <m>A_2(3,4)</m> can be tiled in 64 distinct ways!), and determined the tile counting group for width-2 annuli.  Amanda, Greg, and Kyle each gave a talk at the Joint Mathematics Meetings in Baltimore in January, 2014.  We published our results in <em>Involve</em>, <xref ref="biblio-annuli" />.  
+
+    <figure>
+      <image xml:id="im-annuli" width="60%">
+      <latex-image-code>
+        <![CDATA[
+        \begin{tikzpicture}[scale=.3]
+		\begin{scope}[yshift=5cm]
+		\draw[thick](0,0)--(0,1)--(1,1)--(1,2)--(2,2)--(2,1)--(3,1)--(3,0)--cycle;
+		\draw[very thin](1,0) rectangle (2,1);
+		\draw (1.5,-.7) node{$t_1$};
+		\begin{scope}[xshift=4cm]
+		\draw[thick](0,2)--(3,2)--(3,1)--(2,1)--(2,0)--(1,0)--(1,1)--(0,1)--cycle;
+		\draw[very thin](1,1) rectangle (2,2);
+		\draw (1.5,-.7) node{$t_2$};
+		\end{scope}
+		\begin{scope}[xshift=8cm]
+		\draw[thick](0,0)--(0,3)--(1,3)--(1,2)--(2,2)--(2,1)--(1,1)--(1,0)--cycle;
+		\draw[very thin](0,1) rectangle (1,2);
+		\draw (1,-.7) node{$t_3$};
+		\end{scope}
+		\begin{scope}[xshift=11cm]
+		\draw[thick](2,0)--(2,3)--(1,3)--(1,2)--(0,2)--(0,1)--(1,1)--(1,0)--cycle;
+		\draw[very thin](1,1) rectangle (2,2);
+		\draw (1,-.7) node{$t_4$};
+		\end{scope}
+		\end{scope}
+		\draw[thick](0,3)--(1,3)--(1,2)--(2,2)--(2,0)--(1,0)--(1,1)--(0,1)--cycle;
+		\draw[very thin](0,2)--(1,2)--(1,1)--(2,1);
+		\draw (1,-.7) node{$t_5$};
+		\begin{scope}[xshift=3cm]
+		\draw[thick](0,0)--(0,2)--(1,2)--(1,3)--(2,3)--(2,1)--(1,1)--(1,0)--cycle;
+		\draw[very thin](0,1)--(1,1)--(1,2)--(2,2);
+		\draw (1,-.7) node{$t_6$};
+		\end{scope}
+		\begin{scope}[xshift=6cm]
+		\draw[thick](0,0)--(0,1)--(1,1)--(1,2)--(3,2)--(3,1)--(2,1)--(2,0)--cycle;
+		\draw[very thin](1,0)--(1,1)--(2,1)--(2,2);
+		\draw (1.5,-.7) node{$t_7$};
+		\end{scope}
+		\begin{scope}[xshift=10cm]
+		\draw[thick](0,2)--(2,2)--(2,1)--(3,1)--(3,0)--(1,0)--(1,1)--(0,1)--cycle;
+		\draw[very thin](1,2)--(1,1)--(2,1)--(2,0);
+		\draw (1.5,-.7) node{$t_8$};
+		\end{scope}
+		\begin{scope}[xshift=20cm, yshift=4cm]
+		\filldraw[thick,fill=green!5] (-4,-3.5) rectangle (4,3.5);
+		\foreach \x in {-4,...,4}\draw[very thin](\x,-3.5)--(\x,3.5);
+		\foreach \y in {-3.5,-2.5,...,3.5}\draw[very thin](-4,\y)--(4,\y);
+		\filldraw[thick,fill=white](-2,-1.5) rectangle (2,1.5);
+		\draw (0,-4.2) node{$A_2(3,4)$};
+		\end{scope}
+		\end{tikzpicture}
+        ]]>
+      </latex-image-code>
+    </image>
+    </figure>
+	</li>
+
+<li><em>Competitive tiling</em> (2013) with Levi Altringer and faculty colleague Chuck Dunn at Linfield College.  For a given region and tile set we defined a game tiling number and investigated what this is for dominoes and <m>2 \times n</m> rectangles.  Levi gave a talk at the Joint Mathematics Meetings in Baltimore in January, 2014. More information can be found <url href="http://digitalcommons.linfield.edu/symposium/2014/all/21/">here</url>.</li>
+</ol>
+
+
+<p>These student-centered research projects, particularly the one with Ben Coate, led Professor Hitchman to investigate the connection between tile invariants the homotopy of 2-complexes, see <xref ref="biblio-toptile" />.  </p>
+<p>An overview of student-centered research on tiling questions will appear soon as a chapter in a Springer publication <xref ref="biblio-toolbox" />.  Other good introductory articles into the mathematics of tiling, particularly with research related to tile invariants, see <xref ref="biblio-conway, biblio-korn, biblio-pak, biblio-propp, biblio-thurston"/>. </p>
+
+	
+<paragraphs><title>References</title><p>
+    <biblio type="raw" xml:id="biblio-annuli">Bright, Amanda; Clark, Gregory J.; Dunn, Charles; Evitts, Kyle; Hitchman, Michael P.; Keating, Brian; Whetter, Brian, <title>Tiling annular regions with skew and T-tetrominoes</title>. <journal>Involve</journal> 10 (2017), no. 3, 505–521. <!--DOI: 10.2140/involve.2017.10.505.-->  <url href="http://msp.org/involve/2017/10-3/p09.xhtml">http://msp.org/involve/2017/10-3/p09.xhtml</url>
+    	<note><p><em>Abstract</em>: In this paper, we study tilings of annular regions in the integer lattice by skew and T-tetrominoes. We demonstrate the tileability of most annular regions by the given tile set, enumerate the tilings of width-2 annuli, and determine the tile counting group associated to this tile set and the family of all width-2 annuli.</p></note></biblio>
+    <biblio type="raw" xml:id="biblio-conway">Conway, J.H.; Lagarias, J.C. <title>Tiling with polyominoes and combinatorial group theory</title>. <journal>J. Combin. Theory Ser. A</journal>, 53 (1990), 183-208.</biblio>
+	<biblio type="raw" xml:id="biblio-toolbox">Hitchman, Michael P. <title>A toolbox for tackling tiling questions</title>. <publisher>Springer</publisher>, to appear.
+			<note><p>This article provides an introduction to techniques developed to address three types of tiling questions in the integer lattice: questions of <em>tileability</em> - which regions in a collection  <m>\cal R</m> can be tiled by a tile set <m>T</m>;  <em>connectivity</em> - what can be said about how two tilings of a region in <m>\cal R</m> must be related; and <em>enumeration</em> - how many ways can a region in <m>\cal R</m> be tiled by <m>T</m>.   We place an emphasis on tile invariants, linear combinations among the number of copies of each tile that must persist in any tiling of a region.  A tiler's toolbox draws on content from combinatorics, number theory, group theory, and topology.  Given their hands-on nature, their variety, and their relevance to the undergraduate curriculum, tiling questions continue to be a lively subject for undergraduate mathematics research.</p></note>
+	</biblio>
+    <biblio type="raw" xml:id="biblio-toptile">Hitchman, Michael P. <title>The topology of tile invariants</title>. <journal>Rocky Mountain J. Math. 45</journal> (2015), no. 2, 539--564. doi:10.1216/RMJ-2015-45-2-539. <url href="https://projecteuclid.org/euclid.rmjm/1434208486">https://projecteuclid.org/euclid.rmjm/1434208486</url>. 
+    		<note><p><em>Abstract</em>: In this note, we use techniques in the topology of 2-complexes to recast some tools that have arisen in the study of planar tiling questions. With spherical pictures, we show that the tile counting group associated to a set <m>T</m> of tiles and a set of regions tileable by <m>T</m> is isomorphic to a quotient of the second homology group of a 2-complex built from T. In this topological setting, we derive some well-known tile invariants, one of which we apply to the solution of a tiling question involving modified rectangles.</p></note></biblio>
+	<biblio type="raw" xml:id="biblio-korn">Michael Korn, <title>Geometric and algebraic properties of polyomino tilings</title>, Ph.D. thesis, MIT (2004), <url href="http://hdl.handle.net/1721.1/16628">http://hdl.handle.net/1721.1/16628</url></biblio>
+    <biblio type="raw" xml:id="biblio-lester">Lester, C. <title>Tilings with T and Skew Tetrominoes</title>, <journal>Quercus: Linfield Journal of Undergraduate Research</journal>, Vol. 1 , Article 3, 2012.  <url href="http://digitalcommons.linfield.edu/quercus/vol1/iss1/3">http://digitalcommons.linfield.edu/quercus/vol1/iss1/3</url>
+			<note><p><em>Abstract</em>:  We consider tiling problems in the integer lattice. Specifically, we look at a set of four T-tetrominoes and four skew tetrominoes and determine when this set can tile rectangles and modified rectangles. Local considerations and coloring arguments are the main methods used to prove the untileability of regions.</p></note></biblio>
+    <biblio type="raw" xml:id="biblio-pak">Pak, I. <title>Ribbon tile invariants</title>, <journal>Trans. Amer. Math. Soc.</journal>, 352 (2000), no. 12, 5525-5561.</biblio>
+    <biblio type="raw" xml:id="biblio-propp">Propp, J. <title>A pedestrian approach to a method of Conway, or, A tale of two cities</title>, <journal>Mathematics Magazine</journal>, 70 (1997), no. 5, 327-340.</biblio>
+    <biblio type="raw" xml:id="biblio-thurston">Thurston, W.P. <title>Conway’s tiling groups</title>, <journal>Amer. Math. Monthly</journal>, 95 (1990), special geometry issue, 757-773.</biblio></p>
+</paragraphs>
+</article>
+
+</mathbook>
